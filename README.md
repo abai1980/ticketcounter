@@ -3,7 +3,7 @@ A telegram bot that requires new joiners to a chat group to be verified by issui
 
 ![ticketcounter](https://telegra.ph/file/ab0ce68a6c7b36ef5d246.jpg)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/https://github.com/sakhaavvaavaj93/ticketcounter.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Cloning and Run:
 1. `git clone https://github.com/sakhaavvaavaj93/ticketcounter.git`, to clone the repository.
