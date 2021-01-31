@@ -1,7 +1,7 @@
 # ticket counter
 A telegram bot that requires new joiners to a chat group to be verified by issuing them a captcha to solve. Say no to bots and spammers basically.
 
-(https://telegra.ph/file/ab0ce68a6c7b36ef5d246.jpg)
+![ticketcounter](https://telegra.ph/file/ab0ce68a6c7b36ef5d246.jpg)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/https://github.com/sakhaavvaavaj93/ticketcounter.git)
 
