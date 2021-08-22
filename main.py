@@ -11,6 +11,7 @@ from pyrogram.errors import MessageNotModified
 from pyrogram import Client, idle, filters, emoji
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery \
     , ChatPermissions
+from SungJinwooRobot.modules.disable import DisableAbleCommandHandler
 
 logging.basicConfig(
     level=logging.INFO,
@@ -18,32 +19,6 @@ logging.basicConfig(
 )
 
 logging.getLogger(__name__)
-
-is_env = bool(os.environ.get("ENV", None))
-if is_env:
-    tg_app_id = int(os.environ.get("TG_APP_ID"))
-    tg_api_key = os.environ.get("TG_API_HASH")
-    bot_api_key = os.environ.get("TG_BOT_TOKEN")
-    bot_dustbin = int(os.environ.get("TG_BOT_DUSTBIN"))
-
-    baboon = Client(
-        api_id=tg_app_id,
-        api_hash=tg_api_key,
-        session_name=":memory:",
-        bot_token=bot_api_key,
-        workers=200
-    )
-else:
-    app_config = configparser.ConfigParser()
-    app_config.read("config.ini")
-    bot_api_key = app_config.get("bot-configuration", "api_key")
-    bot_dustbin = int(app_config.get("bot-configuration", "dustbin"))
-
-    baboon = Client(
-        session_name="baboon",
-        bot_token=bot_api_key,
-        workers=200
-    )
 
 image = ImageCaptcha(fonts=["font1.ttf"])
 
