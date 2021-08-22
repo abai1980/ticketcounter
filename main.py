@@ -270,13 +270,3 @@ def remove_captcha(chat_id, message_id):
 
 def insert_captcha(key_id, chat_id, user_id, message_id, m_time):
     db.insert({"key_id": key_id, "chat_id": chat_id, "user_id": user_id, "message_id": message_id, "m_time": m_time})
-
-
-async def main():
-    await baboon.start()
-    await idle()
-
-
-if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
